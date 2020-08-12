@@ -1,5 +1,5 @@
 # typingtest
-
+WIP
 ## Project setup
 ```
 npm install
