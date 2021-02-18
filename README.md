@@ -28,3 +28,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - Display the random list into words
 - Fetch the word input
+- Design

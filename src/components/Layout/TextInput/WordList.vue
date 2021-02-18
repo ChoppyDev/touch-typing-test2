@@ -1,12 +1,12 @@
 <template>
   <div class="text-input-wrapper">
-    <ul id="example-1">
-  <li v-for="word in wordArray" :key="word.index">
+    <ul class="word-list">
+  <li class="word" v-for="word in wordArray" :key="word.index">
     {{ word }}
   </li>
 </ul>
-    <input  v-model="word" type="text" name="text input" id="" v-on:keyup.space="onSpace">
-    <p >{{points}} fdsfss</p>
+    <input class="word-input" v-model="word" type="text" name="text input" id="" v-on:keyup.space="onSpace">
+    <p v-bind:points="points">{{points}} points</p>
   </div>
 </template>
 
@@ -33,6 +33,7 @@ export default {
   methods : {
     onSpace(){
       this.wordManager.compareWord(this.word)
+      this.points = this.wordManager.points
       console.log(this.wordManager.wordlist)
       this.word = ""
     } 
@@ -43,5 +44,8 @@ export default {
 <style>
   .text-input-wrapper {
     border: solid 1px black;
+    background-color: #B3F1FA;
   }
+  @import './../../../assets/css/main.css';
+
 </style>

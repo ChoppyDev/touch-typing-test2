@@ -1,0 +1,25 @@
+.word {
+  background-color: #EBEBEB;
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.word-input {
+  width: 90%;
+    height: 25px;
+    border-radius: 8px;
+    border: solid 1px black;
+    margin: 0 2rem;
+}
+
+.word-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  padding: 2rem 2rem;
+  margin: 1rem;
+  background-color: #F5F3F9;
+}
